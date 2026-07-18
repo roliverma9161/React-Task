@@ -1,0 +1,133 @@
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        .navbar {
+            height: 80px;
+            width: 100%;
+            padding: 0 40px;
+            display: flex;
+            /*align-items: center;*/
+            justify-content: space-between;
+            background: rgb(1, 57, 1);
+        }
+        
+        .logo {
+            height: 65px;
+            width: 50px;
+        }
+        
+        .nav-links {
+            display: flex;
+            list-style: none;
+            gap: 45px;
+        }
+        
+        .nav-links a {
+            color: white;
+            font-size: 24px;
+            font-weight: 500;
+        }
+        
+        .nav-links a:hover {
+            color: green;
+        }
+        
+        .book-btn {
+            background: #f39c12;
+            color: white;
+            border: none;
+            padding: 14px 25px;
+            border-radius: 6px;
+            font-size: 18px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+        
+        .book-btn:hover {
+            background: #d88709;
+        }
+        /*herocss*/
+        /*aboutcss*/
+        
+        .about {
+            padding: 30px 3%;
+            /*font-family: Arial, sans-serif;*/
+        }
+        
+        .about-heading {
+            text-align: center;
+        }
+        
+        .about-heading h1 {
+            font-size: 40px;
+            color: #095b35;
+            margin-bottom: 10px;
+        }
+        
+        .about-heading p {
+            font-size: 20px;
+            margin-bottom: 20px;
+        }
+        
+        .about-container {
+            display: flex;
+            gap: 40px;
+            margin-top: 80px;
+        }
+        
+        .about-content {
+            width: 50%;
+            color: #234;
+            font-size: 18px;
+            line-height: 1.6;
+        }
+        
+        .special-box {
+            background: #eaf8ef;
+            padding: 20px;
+            border-radius: 10px;
+        }
+        
+        .special-box h5 {
+            font-size: 24px;
+        }
+        
+        .special-box li {
+            margin: 12px 0;
+        }
+        
+        .image-card {
+            width: 60%;
+            height: 500px;
+            background: #003b20;
+            border-radius: 20px;
+            overflow: hidden;
+        }
+        
+        .image img {
+            width: 60%;
+            height: 500px;
+            object-fit: cover;
+        }
+        
+        .image-text {
+            color: white;
+            padding: 25px;
+        }
+        
+        .image-text h1 {
+            font-size: 25px;
+        }
+        
+        @media(max-width:700px) {
+            .about-container {
+                flex-direction: column;
+            }
+            .about-content,
+            .image-card {
+                width: 50%;
+            }
+        }
